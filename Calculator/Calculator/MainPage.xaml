@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Calculator"
              x:Class="Calculator.MainPage">
 
-  <Label Text="Welcome to Xamarin Forms!"
+  <Label Text="Welcome First Project"
            VerticalOptions="Center"
            HorizontalOptions="Center" />
 
