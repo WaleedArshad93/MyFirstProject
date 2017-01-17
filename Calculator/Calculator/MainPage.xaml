@@ -4,8 +4,56 @@
              xmlns:local="clr-namespace:Calculator"
              x:Class="Calculator.MainPage">
 
-  <Label Text="Welcome First Project"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  
+  
+  <Grid BackgroundColor="#fce0fb">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="150" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
 
+
+    
+    <Label x:Name="Screen" HorizontalOptions="Fill" VerticalOptions="Fill" Text="0" Grid.Row="0" Grid.ColumnSpan="4" BackgroundColor="#fce0fb" FontSize="Large"></Label>
+    
+    <Button x:Name="AC_Btn" Text="AC" Grid.Row="1" Grid.Column="0" FontSize="Large" TextColor="White" BackgroundColor="#87307a"></Button>
+    <Button Text="+/-" Grid.Row="1" Grid.Column="1" FontSize="Large" ></Button>
+    <Button Text="%" Grid.Row="1" Grid.Column="2" FontSize="Large" ></Button>
+    <Button Text="/" Grid.Row="1" Grid.Column="3"  BackgroundColor="#cc3fb6" FontSize="Large" ></Button>
+
+    <Button Text="7" Grid.Row="2" Grid.Column="0" FontSize="Large"></Button>
+    <Button Text="8" Grid.Row="2" Grid.Column="1" FontSize="Large"></Button>
+    <Button Text="9" Grid.Row="2" Grid.Column="2" FontSize="Large"></Button>
+    <Button Text="X" Grid.Row="2" Grid.Column="3"  BackgroundColor="#cc3fb6" FontSize="Large"></Button>
+
+    <Button Text="4" Grid.Row="3" Grid.Column="0" FontSize="Large"></Button>
+    <Button Text="5" Grid.Row="3" Grid.Column="1" FontSize="Large"></Button>
+    <Button Text="6" Grid.Row="3" Grid.Column="2" FontSize="Large"></Button>
+    <Button Text="-" Grid.Row="3" Grid.Column="3"  BackgroundColor="#cc3fb6"  FontSize="Large"></Button>
+
+    <Button Text="1" Grid.Row="4" Grid.Column="0" FontSize="Large"></Button>
+    <Button Text="2" Grid.Row="4" Grid.Column="1" FontSize="Large"></Button>
+    <Button Text="3" Grid.Row="4" Grid.Column="2" FontSize="Large"></Button>
+    <Button Text="+" Grid.Row="4" Grid.Column="3"  BackgroundColor="#cc3fb6" FontSize="Large"></Button>
+    
+    <Button Text="0" Grid.Row="5" Grid.ColumnSpan="2" FontSize="Large"></Button>
+    <Button Text="." Grid.Row="5" Grid.Column="2" FontSize="Large"></Button>
+    <Button Text="=" Grid.Row="5" Grid.Column="3" TextColor="White" BackgroundColor="#412844" FontSize="Large"></Button>
+    
+  </Grid>
+  
+  
+  
+  
+  
 </ContentPage>

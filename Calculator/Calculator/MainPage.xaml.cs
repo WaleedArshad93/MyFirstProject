@@ -12,6 +12,7 @@ namespace Calculator
         public MainPage()
         {
             InitializeComponent();
+            
         }
     }
 }
